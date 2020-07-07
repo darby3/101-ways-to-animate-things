@@ -1,5 +1,9 @@
 ---
-title: Example Project
+title: 101 Ways to Animate Things
 ---
 
-This is your index page. You can edit its contents at `docs/01-index.hbs`
+I tend to forget that there's a million ways to animate things. Here's some ways. This will probably be a mish-mash of technical methods as well as things that can actually be done.
+
+Also worth noting: I use Firefox full time, and I'm not cross-browser-compatibility-testing anything here. This is mostly for the sake of reference. Maybe I'll go back through and add cross-browser usage notes, where applicable. Or not.
+
+This is also, like some of my [graphics experiments](https://chickenwing-gingerbreadman.xyz/graphics/), sort of a rough sketchbook of ideas. So there's themes and variations and it's sometimes in a logical order but the list might also swerve from time to time when I jump topics or ideas or libraries or whatever. Not to be treated as an exhaustive tutorial.
