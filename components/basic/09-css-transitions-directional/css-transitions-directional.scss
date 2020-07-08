@@ -1,0 +1,13 @@
+#css-transitions-directional {
+  // The transition is on the target state: transition quickly to active, slowly back to the start
+
+  .box {
+    transform: scale(1, 1) translate(0, 0) rotate(0);
+    transition: transform 3s ease-out;
+
+    &.active {
+      transform: scale(2, 2) translate(0, 50%) rotate(45deg);
+      transition: transform 0.05s ease-in;
+    }
+  }
+}

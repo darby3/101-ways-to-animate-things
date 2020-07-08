@@ -1,0 +1,10 @@
+#multiple-transforms {
+  .box {
+    transform: scale(1, 1) rotate(0) translate(0, 0);
+    transition: transform 1.25s ease-in-out;
+
+    &.active {
+      transform: scale(5, 0.5) rotate(900deg) translate(0, -100%);
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@keyframes backAndForth {
+  0% {
+    transform: none;
+    transform-origin: center;
+  }
+
+  50% {
+    transform: translate(-100%, 0);
+  }
+
+  100% {
+    transform: translate(100%, 0) rotate(-180deg);
+  }
+}
+
+#css-keyframes-infinite {
+  .box {
+    transform-origin: center;
+
+    &.active {
+      animation: 2s backAndForth ease infinite;
+    }
+  }
+}

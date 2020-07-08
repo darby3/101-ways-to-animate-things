@@ -1,0 +1,10 @@
+#transform-translate {
+  .box {
+    transform: translate(0, 0);
+    transition: transform 0.625s ease-in-out;
+
+    &.active {
+      transform: translate(100%, 100%);
+    }
+  }
+}
