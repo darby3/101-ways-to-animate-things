@@ -15,8 +15,10 @@ cp -r ./STARTER/ ./components/$TARGET_DIR/$COMPONENT
 mv ./components/$TARGET_DIR/$COMPONENT/STARTER.config.yml ./components/$TARGET_DIR/$COMPONENT/$COMPONENT.config.yml
 mv ./components/$TARGET_DIR/$COMPONENT/STARTER.js ./components/$TARGET_DIR/$COMPONENT/$COMPONENT.js
 mv ./components/$TARGET_DIR/$COMPONENT/STARTER.hbs ./components/$TARGET_DIR/$COMPONENT/$COMPONENT.hbs
+mv ./components/$TARGET_DIR/$COMPONENT/STARTER.scss ./components/$TARGET_DIR/$COMPONENT/$COMPONENT.scss
 
 sed -i -e "s/STARTER/$COMPONENT/g" ./components/$TARGET_DIR/$COMPONENT/$COMPONENT.js
 sed -i -e "s/STARTER/$COMPONENT/g" ./components/$TARGET_DIR/$COMPONENT/$COMPONENT.hbs
+sed -i -e "s/STARTER/$COMPONENT/g" ./components/$TARGET_DIR/$COMPONENT/$COMPONENT.scss
 
 rm ./components/$TARGET_DIR/$COMPONENT/*-e
