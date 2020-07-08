@@ -1,0 +1,8 @@
+#toggle-a-class {
+  .box {
+    &.active {
+      background-color: #ff00ff;
+      color: #ffffff;
+    }
+  }
+}
