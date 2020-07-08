@@ -1,0 +1,11 @@
+#relative-positioning {
+  .box {
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease-in-out;
+
+    &.active {
+      left: -100px;
+    }
+  }
+}
