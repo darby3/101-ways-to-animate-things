@@ -1,0 +1,14 @@
+#transition-end-event {
+  .box {
+    width: 150px;
+    height: 150px;
+
+    position: relative;
+    left: -200px;
+    transition: left 1s ease;
+
+    &.active {
+      left: 200px;
+    }
+  }
+}

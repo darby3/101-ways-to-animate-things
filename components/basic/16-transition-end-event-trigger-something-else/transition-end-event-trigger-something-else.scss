@@ -1,0 +1,29 @@
+#transition-end-event-trigger-something-else {
+  .box {
+    width: 150px;
+    height: 150px;
+  }
+
+  .transition-trigger-box-one,
+  .transition-trigger-box-two {
+    position: relative;
+    left: 0;
+    transition: left 0.125s ease-out;
+
+    &.active {
+      transition: left 1s ease-in;
+    }
+  }
+
+  .transition-trigger-box-one {
+    &.active {
+      left: -200px;
+    }
+  }
+
+  .transition-trigger-box-two {
+    &.active {
+      left: 200px;
+    }
+  }
+}

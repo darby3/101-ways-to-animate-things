@@ -1,0 +1,18 @@
+#transition-on-hover {
+  .box {
+    width: 200px;
+    height: 200px;
+    transform: scale(1, 1) rotate(0);
+    transition: all 0.25s ease;
+    background-color: #8df5c6;
+
+    &:hover {
+      transition: transform 0.75s ease-out, background-color 1s ease-in, color 0.375s ease-in, border-radius 0.9s ease-out;
+      cursor: pointer;
+      transform: scale(1.25, 1.25) rotate(-45deg);
+      background-color: #047644;
+      color: #fff;
+      border-radius: 45px;
+    }
+  }
+}

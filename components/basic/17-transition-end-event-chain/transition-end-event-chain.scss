@@ -1,0 +1,37 @@
+#transition-end-event-chain {
+  // Transition succession boxes.
+  // Note: using super-short transition times on the "return" states because we need transition events to fire for boxes
+  // two and three to reset. I could be less lazy and have the button toggle all the active states simultaneously if the
+  // first is active, but I'm not doing that right now because I am lazy.
+
+  .transition-succession-box-one,
+  .transition-succession-box-two,
+  .transition-succession-box-three {
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: left 0.00001s linear, top 0.00001s linear;
+
+    &.active {
+      transition: left 0.5s ease-in-out, top 0.5s ease-in-out;
+    }
+  }
+
+  .transition-succession-box-one {
+    &.active {
+      left: -120px;
+    }
+  }
+
+  .transition-succession-box-two {
+    &.active {
+      left: 120px;
+    }
+  }
+
+  .transition-succession-box-three {
+    &.active {
+      top: -200px;
+    }
+  }
+}
