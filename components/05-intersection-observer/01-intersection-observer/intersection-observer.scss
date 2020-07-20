@@ -1,0 +1,27 @@
+.intersection-observer {
+  .text {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .box {
+    width: calc(300px - 2rem);
+    height: 300px;
+    padding: 0 1rem;
+    font-weight: bold;
+
+    background: #ff0000;
+
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+    &.active {
+      background-color: #0000ff;
+      color: #ffffff;
+    }
+  }
+}
