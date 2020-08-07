@@ -2,8 +2,6 @@
   document.addEventListener('DOMContentLoaded', function () {
     console.log("gsap-basic active");
 
-    const { gsap } = require("gsap/dist/gsap");
-
     const button = document.querySelector('#trigger');
     const box = document.querySelector('#box');
 
