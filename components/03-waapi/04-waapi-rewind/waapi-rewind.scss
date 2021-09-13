@@ -1,0 +1,15 @@
+#waapi-rewind {
+  .controls {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: normal;
+
+    > * {
+      margin-right: 1rem;
+    }
+  }
+}
