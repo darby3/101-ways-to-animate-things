@@ -1,0 +1,28 @@
+#waapi-delays {
+  .controls {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: normal;
+
+    > * {
+      margin-right: 1rem;
+    }
+  }
+
+
+  #box.box {
+    background-color: #00ff00;
+  }
+
+  #box2.box {
+    background-color: #ff00ff;
+  }
+
+  #box3.box {
+    background-color: #00ffff;
+  }
+}
