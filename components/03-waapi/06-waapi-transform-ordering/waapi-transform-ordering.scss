@@ -1,0 +1,42 @@
+#waapi-transform-ordering {
+  text-align: center;
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 1px);
+    width: 2px;
+    background-color: gray;
+    content: "";
+  }
+
+  .controls {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: normal;
+
+    > * {
+      margin-right: 1rem;
+    }
+  }
+
+  #box {
+    border: 2px solid #ff0000;
+  }
+  #box2 {
+    border: 2px solid #00ff00;
+  }
+  #box3 {
+    border: 2px solid #0000ff;
+  }
+}

@@ -1,0 +1,35 @@
+<section id="waapi-transform-ordering" class="animate-things-wrapper-b">
+    <div class="controls">
+        <button id="trigger">Play</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Set to start point</button>
+        <button id="halfway">Set to midway point</button>
+        <button id="end">Set to end point</button>
+    </div>
+
+    <div id="boxX" class="box">
+        Translate
+    </div>
+
+    <div id="boxY" class="box">
+        Rotate
+    </div>
+
+    <div id="boxZ" class="box">
+        Scale
+    </div>
+
+    <div id="box" class="box">
+        Translate -> Rotate -> Scale
+    </div>
+
+    <div id="box2" class="box">
+        Scale -> Translate -> Rotate
+    </div>
+
+    <div id="box3" class="box">
+        Scale -> Rotate -> Translate
+    </div>
+</section>
+
+<script src="{{ path '/js/components/waapi-transform-ordering.js' }}"></script>
