@@ -1,0 +1,46 @@
+<section id="waapi-transform-ordering-3" class="animate-things-wrapper-b">
+    <div id="mains">
+        <div id="boxContainerA">
+            <div data-translate="">
+                <div data-rotate="">
+                    <div data-scale="">
+                        <div class="box">
+                            Translate -> Rotate -> Scale
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="boxContainerB">
+            <div data-scale="">
+                <div data-translate="">
+                    <div data-rotate="">
+                        <div class="box">
+                            Scale -> Translate -> Rotate
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ghosts">
+        <div class="ghostBox">
+            A
+        </div>
+    </div>
+
+    <div class="controls">
+        <button id="trigger">Play</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Set to start point</button>
+        <button id="halfway">Set to midway point</button>
+        <button id="end">Set to end point</button>
+
+        <input type="range" id="scrubber" name="scrubber"
+               min="0" max="1" step="0.01">
+    </div>
+</section>
+
+<script src="{{ path '/js/components/waapi-transform-ordering-3.js' }}"></script>
